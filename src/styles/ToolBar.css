@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 2rem;
-  padding: 500px 0 7rem 0;
+  padding: 0 0 0 0;
   margin-left: 2%;
+  margin-top: 600px;
 }
 
 .label {

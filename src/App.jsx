@@ -12,14 +12,17 @@ const Container = styled.div`
   margin-bottom: 50px;
 `;
 
-export default function App() {
-  return (
-    <Container>
-      <NavBar />
-      <Controller />
-      <AlgoDisplay />
-      <h3>Linked List</h3>
-      <Footer />
-    </Container>
+class App extends React.Component {
+  render(){ return (
+    <div className="App">
+      <NavBar/>
+      <Controller/>
+      <AlgoDisplay/>
+      <h3>Binary Tree</h3>
+      <div id="mainContent"></div>
+    </div>
   );
+  }
 }
+
+export default App;
