@@ -18,6 +18,7 @@ export default function App() {
       <NavBar />
       <Controller />
       <AlgoDisplay />
+      <h3>Linked List</h3>
       <Footer />
     </Container>
   );

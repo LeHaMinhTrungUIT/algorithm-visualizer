@@ -1,8 +1,8 @@
 .tool-bar {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(3.75rem, 7.5rem));
+  grid-template-columns: auto auto auto auto;
   gap: 2rem;
-  padding: 5rem 0 7rem 0;
+  padding: 500px 0 7rem 0;
   margin-left: 2%;
 }
 
@@ -17,8 +17,8 @@
   height: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  color: rgb(241, 240, 240);
-  background-color: gray;
+  color: black;
+  background-color: #f5f5f5;
   width: 5.5rem;
 }
 
@@ -30,8 +30,8 @@
   width: 7.5rem;
   height: 2.3rem;
   border-radius: 4px;
-  background-color: gray;
-  color: rgb(241, 240, 240);
+  background-color: #f5f5f5;
+  color: black;
 }
 
 .submit-container {
@@ -41,4 +41,7 @@
 
 .submit:hover {
   background-color: #444444;
+  color: white;
 }
+
+

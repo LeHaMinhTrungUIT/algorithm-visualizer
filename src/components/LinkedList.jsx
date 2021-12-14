@@ -7,10 +7,6 @@ import { AnimateSharedLayout } from 'framer-motion';
 import '../styles/LinkedList.css';
 
 const initialList = new Model();
-// starting list
-initialList.push('head', 'linear-gradient(90deg, #de4146, #fcb045)');
-initialList.push('body', 'linear-gradient(90deg, #de4146, #fcb045)');
-initialList.push('tail', 'linear-gradient(90deg, #de4146, #fcb045)');
 
 export default function LinkedList () {
   // array of nodes
@@ -85,6 +81,7 @@ export default function LinkedList () {
   return (
     <div className='linked-list'>
       <div className='wrapper'>
+        
         <ToolBar
           setCurrentMethod={setCurrentMethod}
           currentMethod={currentMethod}

@@ -3,7 +3,7 @@
   width: 7.5rem;
   /* have to change to be responsive */
   height: 2.3rem;
-  background-color: gray;
+  background-color: #f5f5f5;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -16,7 +16,7 @@
 }
 
 .current-text {
-  color: rgb(241, 240, 240);
+  color: black;
 }
 
 .drop-opened {
@@ -39,12 +39,13 @@
 .method {
   width: 5.5rem;
   height: 2.3rem;
-  background-color: #222222;
+  background-color: #f5f5f5;
   padding: 0.5rem 1rem;
-  color: white;
+  color: black;
   margin-left: -40px;
 }
 
 .method:hover {
   background-color: #444444;
+  color: white;
 }
