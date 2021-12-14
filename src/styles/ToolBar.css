@@ -9,7 +9,7 @@
 .label {
   display: block;
   padding-bottom: 0.5rem;
-  color: rgb(241, 240, 240);
+  color: black;
 }
 
 .value-input,
@@ -18,7 +18,7 @@
   padding: 0.5rem 1rem;
   border-radius: 4px;
   color: rgb(241, 240, 240);
-  background-color: #222222;
+  background-color: gray;
   width: 5.5rem;
 }
 
@@ -30,7 +30,7 @@
   width: 7.5rem;
   height: 2.3rem;
   border-radius: 4px;
-  background-color: #222222;
+  background-color: gray;
   color: rgb(241, 240, 240);
 }
 

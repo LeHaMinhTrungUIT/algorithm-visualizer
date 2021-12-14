@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import Node from './Node';
 import ToolBar from './ToolBar';
@@ -82,8 +83,8 @@ export default function LinkedList () {
 
 
   return (
-    <LinkedList>
-      <Wrapper>
+    <div className='linked-list'>
+      <div className='wrapper'>
         <ToolBar
           setCurrentMethod={setCurrentMethod}
           currentMethod={currentMethod}
@@ -111,7 +112,7 @@ export default function LinkedList () {
             })}
           </section>
         </AnimateSharedLayout>
-      </Wrapper>
-    </LinkedList>
+      </div>
+    </div>
   );
 }

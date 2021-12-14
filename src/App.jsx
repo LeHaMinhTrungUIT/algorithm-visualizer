@@ -18,7 +18,7 @@ export default function App() {
       <NavBar />
       <Controller />
       <AlgoDisplay />
-      
+      <Footer />
     </Container>
   );
 }

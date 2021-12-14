@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import dropTriangle from '../images/drop-triangle.svg';
 import { motion } from 'framer-motion';

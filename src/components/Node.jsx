@@ -1,3 +1,4 @@
+import React from 'react';
 import arrow from '../images/arrow.svg';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/Node.css';

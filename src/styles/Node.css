@@ -14,7 +14,7 @@
 .index,
 .value,
 .next {
-  color: rgb(241, 240, 240);
+  color: black;
   font-size: 0.7rem;
   text-align: center;
   padding-bottom: 0.5rem;
