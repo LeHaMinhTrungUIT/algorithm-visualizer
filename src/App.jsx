@@ -21,6 +21,8 @@ class App extends React.Component {
         <NavBar/>
         <Controller/>
         <AlgoDisplay/>
+
+        <h3>Linked List</h3>
         <LinkedList/>
 
         <h3>Binary Tree</h3>
