@@ -79,7 +79,7 @@ export default function LinkedList () {
 
 
   return (
-    <div className='linked-list'>
+    <div className='linked-list' >
       <div className='wrapper'>
         
         <ToolBar

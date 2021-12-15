@@ -4,7 +4,7 @@
   gap: 2rem;
   padding: 0 0 0 0;
   margin-left: 2%;
-  margin-top: 600px;
+  margin-top: 250px;
 }
 
 .label {
@@ -46,3 +46,6 @@
 }
 
 
+.mainContent {
+  margin-top: 500px;
+}

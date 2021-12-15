@@ -3,7 +3,9 @@ import styled from "styled-components";
 import { NavBar } from "./components/NavBar";
 import { Controller } from "./components/Controller";
 import { AlgoDisplay } from "./components/AlgoDisplay";
-import { Footer } from "./components/Footer"
+
+import LinkedList from "./components/LinkedList";
+
 
 const Container = styled.div`
   margin: 0 10px;
@@ -13,15 +15,19 @@ const Container = styled.div`
 `;
 
 class App extends React.Component {
-  render(){ return (
-    <div className="App">
-      <NavBar/>
-      <Controller/>
-      <AlgoDisplay/>
-      <h3>Binary Tree</h3>
-      <div id="mainContent"></div>
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <NavBar/>
+        <Controller/>
+        <AlgoDisplay/>
+        <LinkedList/>
+
+        <h3>Binary Tree</h3>
+        <div id="mainContent"></div>
+
+      </div>
+    );
   }
 }
 

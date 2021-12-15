@@ -1,0 +1,10 @@
+<h3>Binary Tree</h3>
+      <div id="mainContent"></div>
+
+
+
+<Footer/>
+      <NavBar/>
+      <Controller/>
+      <AlgoDisplay/>
+      <h3>Linked List</h3>
