@@ -106,7 +106,7 @@ export default class SinglyLinkedList {
   }
 
   // insert method - accepts an index and value and inserts a new node
-  insert(value, color, index) {
+  insert(value, color, index, changecolor) {
     if (index < 0 || index > this.length) {
       return false;
     }
@@ -117,6 +117,9 @@ export default class SinglyLinkedList {
     if (index === this.length) {
       this.push(value, color);
       return true;
+    }
+    for (let i=0; i<this.length; i++){
+      node.color=changecolor;
     }
     const node = new Node(value, color);
     let current = this.head;

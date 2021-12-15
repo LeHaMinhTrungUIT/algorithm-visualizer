@@ -24,6 +24,10 @@ export default function LinkedList () {
     'linear-gradient(#de4146, #fcb045)'
   );
 
+  const [changeColor] = useState(
+    'linear-gradient(90deg, #3baa22, #89f440)'
+  )
+
   // current length of list
   const [length, setLength] = useState(3);
 
@@ -62,7 +66,7 @@ export default function LinkedList () {
         initialList.set(value, currentColor, indexValue);
         break;
       case 'insert':
-        initialList.insert(value, currentColor, indexValue);
+        initialList.insert(value, currentColor, indexValue, changeColor);
         break;
       case 'remove':
         initialList.remove(indexValue);
