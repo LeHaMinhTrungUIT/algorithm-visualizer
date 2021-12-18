@@ -12,9 +12,7 @@ const ColorsDropDown = (props) => {
   // updates all colors in array except current color
   useEffect(() => {
     const colors = [
-      'linear-gradient(90deg, #de4146, #fcb045',
-      'linear-gradient(90deg, #417ADE, #1df8fd)',
-      'linear-gradient(90deg, #3baa22, #89f440)',
+      'linear-gradient(90deg, #f7a1df, #f7a1df'
     ];
 
     const filteredColors = colors.filter(

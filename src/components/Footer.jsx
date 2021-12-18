@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import LinkedList from "./LinkedList";
 
 const FooterDiv = styled.div`
   display: flex;
@@ -14,7 +13,7 @@ const FooterDiv = styled.div`
 export function Footer() {
   return (
     <FooterDiv>
-      <LinkedList/>
+      
     </FooterDiv>
   );
 }

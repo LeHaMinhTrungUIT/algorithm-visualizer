@@ -21,11 +21,11 @@ export default function LinkedList () {
 
   // selected color
   const [currentColor, setCurrentColor] = useState(
-    'linear-gradient(#de4146, #fcb045)'
+    'linear-gradient(#f7a1df, #f7a1df)'
   );
 
   const [changeColor] = useState(
-    'linear-gradient(90deg, #3baa22, #89f440)'
+    'linear-gradient(90deg, #f7a1df, #f7a1df)'
   )
 
   // current length of list

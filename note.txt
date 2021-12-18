@@ -1,5 +1,5 @@
 <h3>Binary Tree</h3>
-      <div id="mainContent"></div>
+<div id="mainContent"></div>
 
 
 
