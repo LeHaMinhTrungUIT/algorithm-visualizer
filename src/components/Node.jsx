@@ -3,7 +3,7 @@ import arrow from '../images/arrow.svg';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/Node.css';
 
-const Node = ({ value, next, index, color }) => {
+const Node = ({ value, next, index,color }) => {
   return (
     <AnimatePresence>
       <motion.div

@@ -20,6 +20,7 @@ const MethodsDropDown = (props) => {
       'set',
       'shift',
       'unshift',
+      'print',
     ];
 
     const filteredList = allMethods.filter(

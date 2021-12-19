@@ -9,8 +9,8 @@ const InfoFlex = styled.div`
 export function InfoFooter({ swapCount, comparisionCount, children }) {
   return (
     <InfoFlex>
-      <div>Số lần hoán đổi: <strong>{swapCount}</strong></div>
-      <div>Số lần so sánh: <strong>{comparisionCount}</strong></div>
+      <div>Number of swap: <strong>{swapCount}</strong></div>
+      <div>Number of comparision: <strong>{comparisionCount}</strong></div>
     </InfoFlex>
   );
 }

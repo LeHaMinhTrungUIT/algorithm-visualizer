@@ -53,7 +53,7 @@ export function AlgoDisplay() {
   if (sortingArray.length === 0)
     return (
       <h3 style={flexCenter}>
-        Nhập dữ liệu vào ô input!
+        Please insert data!
       </h3>
     );
 

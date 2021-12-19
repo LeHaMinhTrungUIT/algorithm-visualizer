@@ -177,7 +177,7 @@ export const SortManager = React.memo(function ({
       <AlgoHeaderBar>
         <strong>{sortingAlgorithmName}</strong>
         <TimerDiv>
-          <span>Thời gian: </span>
+          <span>Time: </span>
           <strong>
             <Timer
               isAlgoExecutionOver={isAlgoExecutionOver.current}

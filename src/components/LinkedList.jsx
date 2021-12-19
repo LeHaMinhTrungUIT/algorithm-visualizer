@@ -66,7 +66,7 @@ export default function LinkedList () {
         initialList.set(value, currentColor, indexValue);
         break;
       case 'insert':
-        initialList.insert(value, currentColor, indexValue, changeColor);
+        initialList.insert(value, currentColor, indexValue);
         break;
       case 'remove':
         initialList.remove(indexValue);
@@ -74,6 +74,8 @@ export default function LinkedList () {
       case 'reverse':
         initialList.reverse();
         break;
+      case 'print':
+        initialList.print();
       default:
         break;
     }
@@ -105,7 +107,7 @@ export default function LinkedList () {
                 <Node
                   key={method.key}
                   value={method.value}
-                  next={method.next ? method.next.value : 'null'}
+                  next={method.next ? index+1 : 'null'}
                   index={index}
                   color={method.color}
                 />

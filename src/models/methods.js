@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 
+var c_delay=0;
+var delay_time=100;
 // In order to create, read, update, and delete nodes on linked list
 export default class SinglyLinkedList {
   constructor(head, tail) {
@@ -81,6 +83,12 @@ export default class SinglyLinkedList {
     return this;
   }
 
+
+
+
+  
+
+
   // get index - retrieve a value at given index
   get(index) {
     if (this.length === 0 || this.length - 1 < index) {
@@ -90,6 +98,7 @@ export default class SinglyLinkedList {
 
     for (let i = 0; i < index; i += 1) {
       node = node.next;
+      this.doimau(node);
     }
     return node;
   }
@@ -106,7 +115,7 @@ export default class SinglyLinkedList {
   }
 
   // insert method - accepts an index and value and inserts a new node
-  insert(value, color, index, changecolor) {
+  insert(value, color, index) {
     if (index < 0 || index > this.length) {
       return false;
     }
@@ -117,9 +126,6 @@ export default class SinglyLinkedList {
     if (index === this.length) {
       this.push(value, color);
       return true;
-    }
-    for (let i=0; i<this.length; i++){
-      node.color=changecolor;
     }
     const node = new Node(value, color);
     let current = this.head;
@@ -176,7 +182,7 @@ export default class SinglyLinkedList {
       node = next;
     }
     return this;
-  }
+  } 
 }
 
 class Node {

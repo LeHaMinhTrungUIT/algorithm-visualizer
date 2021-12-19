@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { NavBar } from "./components/NavBar";
 import { Controller } from "./components/Controller";
 import { AlgoDisplay } from "./components/AlgoDisplay";
-
 import LinkedList from "./components/LinkedList";
 
 
