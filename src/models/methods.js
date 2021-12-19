@@ -164,7 +164,7 @@ export default class SinglyLinkedList {
   }
 
   // reverse method - reverses the order of the nodes
-  reverse() {
+  print() {
     if (this.length === 0) {
       return true;
     }
@@ -172,13 +172,12 @@ export default class SinglyLinkedList {
     this.head = this.tail;
     this.tail = node;
 
-    let previous = null;
-    let next;
-
+    var result = new Array();
     for (let i = 0; i < this.length; i++) {
-      alert("Value: " + node.value );
+      result.push(node.value)
       node=node.next;
     }
+    alert("Print List: "+result);
     return this;
   }
 }
