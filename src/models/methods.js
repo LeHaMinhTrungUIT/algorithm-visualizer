@@ -176,13 +176,11 @@ export default class SinglyLinkedList {
     let next;
 
     for (let i = 0; i < this.length; i++) {
-      next = node.next;
-      node.next = previous;
-      previous = node;
-      node = next;
+      alert("Value: " + node.value );
+      node=node.next;
     }
     return this;
-  } 
+  }
 }
 
 class Node {

@@ -71,11 +71,9 @@ export default function LinkedList () {
       case 'remove':
         initialList.remove(indexValue);
         break;
-      case 'reverse':
-        initialList.reverse();
-        break;
       case 'print':
         initialList.print();
+        break;
       default:
         break;
     }
