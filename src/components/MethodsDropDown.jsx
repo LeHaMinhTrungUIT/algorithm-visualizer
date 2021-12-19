@@ -16,11 +16,10 @@ const MethodsDropDown = (props) => {
       'pop',
       'push',
       'remove',
-      'reverse',
+      'print',
       'set',
       'shift',
       'unshift',
-      'print',
     ];
 
     const filteredList = allMethods.filter(
