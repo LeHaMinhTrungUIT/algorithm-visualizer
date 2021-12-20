@@ -13,7 +13,7 @@ export default function LinkedList () {
   const [list, setList] = useState([]);
 
   // selected drop down
-  const [currentMethod, setCurrentMethod] = useState('unshift');
+  const [currentMethod, setCurrentMethod] = useState('insert');
 
   // value of value input and index input
   const [value, setValue] = useState('');
@@ -50,17 +50,17 @@ export default function LinkedList () {
   // update nodes after method is ran
   const updateNodes = (e) => {
     switch (currentMethod) {
-      case 'push':
-        initialList.push(value, currentColor);
+      case 'addtail':
+        initialList.addtail(value, currentColor);
         break;
-      case 'pop':
-        initialList.pop();
+      case 'deletetail':
+        initialList.deletetail();
         break;
-      case 'shift':
-        initialList.shift();
+      case 'deletehead':
+        initialList.deletehead();
         break;
-      case 'unshift':
-        initialList.unshift(value, currentColor);
+      case 'addhead':
+        initialList.addhead(value, currentColor);
         break;
       case 'set':
         initialList.set(value, currentColor, indexValue);

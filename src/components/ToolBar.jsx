@@ -65,7 +65,7 @@ const ToolBar = ({
     }
   };
 
-  if (currentMethod === 'push' || currentMethod === 'unshift') {
+  if (currentMethod === 'addtail' || currentMethod === 'addhead') {
     inputs = (
       <>
         {' '}

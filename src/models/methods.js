@@ -10,8 +10,8 @@ export default class SinglyLinkedList {
     this.length = 0;
   }
 
-  // push method - adds to the tail
-  push(value, color) {
+  // addtail method - adds to the tail
+  addtail(value, color) {
     const newNode = new Node(value, color);
     if (!this.head) {
       this.head = newNode;
@@ -25,7 +25,7 @@ export default class SinglyLinkedList {
   }
 
   // pop method - remove from the tail
-  pop() {
+  deletetail() {
     if (this.length === 0) {
       return undefined;
     }
@@ -48,8 +48,8 @@ export default class SinglyLinkedList {
     return previousTail;
   }
 
-  // shift method - remove from the head
-  shift() {
+  //  method - remove from the head
+  deletehead() {
     if (this.length === 0) {
       return undefined;
     }
@@ -66,8 +66,8 @@ export default class SinglyLinkedList {
     return currentHead;
   }
 
-  // unshift method - insert node to the beginning
-  unshift(value, color) {
+  //method - insert node to the beginning
+  addhead(value, color) {
     const newNode = new Node(value, color);
     if (!this.head) {
       this.head = newNode;
@@ -98,7 +98,6 @@ export default class SinglyLinkedList {
 
     for (let i = 0; i < index; i += 1) {
       node = node.next;
-      this.doimau(node);
     }
     return node;
   }
@@ -120,11 +119,11 @@ export default class SinglyLinkedList {
       return false;
     }
     if (index === 0) {
-      this.unshift(value, color);
+      this.addhead(value, color);
       return true;
     }
     if (index === this.length) {
-      this.push(value, color);
+      this.addtail(value, color);
       return true;
     }
     const node = new Node(value, color);
@@ -147,11 +146,11 @@ export default class SinglyLinkedList {
       return null;
     }
     if (index === 0) {
-      this.shift();
+      this.deletehead();
       return true;
     }
     if (index === this.length - 1) {
-      this.pop();
+      this.deletetail();
       return true;
     }
     const before = this.get(index - 1);
@@ -174,7 +173,7 @@ export default class SinglyLinkedList {
 
     var result = new Array();
     for (let i = 0; i < this.length; i++) {
-      result.push(node.value)
+      result.addtail(node.value)
       node=node.next;
     }
     alert("Print List: "+result);

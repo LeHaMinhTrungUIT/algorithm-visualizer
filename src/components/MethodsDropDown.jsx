@@ -13,13 +13,13 @@ const MethodsDropDown = (props) => {
   useEffect(() => {
     const allMethods = [
       'insert',
-      'pop',
-      'push',
+      'deletetail',
+      'addtail',
       'remove',
       'print',
       'set',
-      'shift',
-      'unshift',
+      'deletehead',
+      'addhead',
     ];
 
     const filteredList = allMethods.filter(
