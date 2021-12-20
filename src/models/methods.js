@@ -39,6 +39,7 @@ export default class SinglyLinkedList {
     let node = this.head;
     const previousTail = this.tail;
 
+    
     while (node.next !== this.tail) {
       node = node.next;
     }
@@ -177,7 +178,6 @@ export default class SinglyLinkedList {
       node=node.next;
     }
     alert("Print List: " + result);
-    return this;
   }
 }
 
