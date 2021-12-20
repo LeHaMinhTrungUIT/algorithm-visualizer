@@ -173,10 +173,10 @@ export default class SinglyLinkedList {
 
     var result = new Array();
     for (let i = 0; i < this.length; i++) {
-      result.addtail(node.value)
+      result.push(node.value)
       node=node.next;
     }
-    alert("Print List: "+result);
+    alert("Print List: " + result);
     return this;
   }
 }
