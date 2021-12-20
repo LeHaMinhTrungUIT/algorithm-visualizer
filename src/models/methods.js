@@ -169,9 +169,7 @@ export default class SinglyLinkedList {
       return true;
     }
     let node = this.head;
-    this.head = this.tail;
-    this.tail = node;
-
+    
     var result = new Array();
     for (let i = 0; i < this.length; i++) {
       result.push(node.value)
