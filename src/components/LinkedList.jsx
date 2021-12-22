@@ -6,20 +6,22 @@ import Model from '../models/methods';
 import { AnimateSharedLayout } from 'framer-motion';
 import '../styles/LinkedList.css';
 
+
+//File này là chỉnh của linked list
 const initialList = new Model();
 
 export default function LinkedList () {
-  // array of nodes
+  
   const [list, setList] = useState([]);
 
-  // selected drop down
+  
   const [currentMethod, setCurrentMethod] = useState('insert');
 
-  // value of value input and index input
+  
   const [value, setValue] = useState('');
   const [indexValue, setIndex] = useState('');
 
-  // selected color
+  
   const [currentColor, setCurrentColor] = useState(
     'linear-gradient(#f7a1df, #f7a1df)'
   );
@@ -28,7 +30,7 @@ export default function LinkedList () {
     'linear-gradient(90deg, #f7a1df, #f7a1df)'
   )
 
-  // current length of list
+  
   const [length, setLength] = useState(3);
 
   useEffect(() => {
@@ -47,7 +49,7 @@ export default function LinkedList () {
     setList(array);
   };
 
-  // update nodes after method is ran
+  
   const updateNodes = (e) => {
     switch (currentMethod) {
       case 'addtail':
@@ -85,7 +87,7 @@ export default function LinkedList () {
   return (
     <div className='linked-list' >
       <div className='wrapper'>
-        
+        <h3>Linked List</h3>
         <ToolBar
           setCurrentMethod={setCurrentMethod}
           currentMethod={currentMethod}

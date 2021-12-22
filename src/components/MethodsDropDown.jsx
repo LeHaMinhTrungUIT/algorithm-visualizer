@@ -9,7 +9,8 @@ const MethodsDropDown = (props) => {
   const [open, setOpen] = useState(false);
   const [methods, setMethods] = useState([]);
 
-  // updates all methods in array except current method
+  // các loại method của linked list
+
   useEffect(() => {
     const allMethods = [
       'insert',
@@ -29,7 +30,7 @@ const MethodsDropDown = (props) => {
     setMethods(filteredList);
   }, [props.currentMethod]);
 
-  // Click handlers
+  
   const handleClick = () => {
     setOpen(!open);
   };

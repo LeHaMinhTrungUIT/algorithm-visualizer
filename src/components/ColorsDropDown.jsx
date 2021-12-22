@@ -5,11 +5,13 @@ import { motion } from 'framer-motion';
 import { dropForm } from '../models/animate';
 import '../styles/ColorsDropDown.css';
 
+
+//này là navigation để chọn màu cho node
 const ColorsDropDown = (props) => {
   const [open, setOpen] = useState(false);
   const [colors, setColors] = useState([]);
 
-  // updates all colors in array except current color
+  // bỏ màu vô mảng colors ở dưới là chọn được
   useEffect(() => {
     const colors = [
       'linear-gradient(90deg, #f7a1df, #f7a1df'
@@ -22,7 +24,7 @@ const ColorsDropDown = (props) => {
     setColors(filteredColors);
   }, [props.currentColor]);
 
-  // Click handlers
+  
   const handleClick = () => {
     setOpen(!open);
   };

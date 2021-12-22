@@ -13,6 +13,7 @@ const Container = styled.div`
   margin-bottom: 50px;
 `;
 
+/* Cái này là file chính, nó render thẳng vô đây nha*/
 class App extends React.Component {
   render() {
     return (
@@ -20,13 +21,9 @@ class App extends React.Component {
         <NavBar/>
         <Controller/>
         <AlgoDisplay/>
-
-        <h3>Linked List</h3>
         <LinkedList/>
-
         <h3>Binary Tree</h3>
         <div id="mainContent"></div>
-
       </div>
     );
   }

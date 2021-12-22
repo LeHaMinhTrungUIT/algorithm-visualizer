@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 var c_delay=0;
 var delay_time=100;
-// In order to create, read, update, and delete nodes on linked list
+// tạo list mới
 export default class SinglyLinkedList {
   constructor(head, tail) {
     this.head = head;
@@ -10,7 +10,7 @@ export default class SinglyLinkedList {
     this.length = 0;
   }
 
-  // addtail method - adds to the tail
+  // addtail - thêm vào cuối
   addtail(value, color) {
     const newNode = new Node(value, color);
     if (!this.head) {
@@ -24,7 +24,7 @@ export default class SinglyLinkedList {
     }
   }
 
-  // pop method - remove from the tail
+  // deletetail - xóa cuối
   deletetail() {
     if (this.length === 0) {
       return undefined;
@@ -49,7 +49,7 @@ export default class SinglyLinkedList {
     return previousTail;
   }
 
-  //  method - remove from the head
+  //  deletehead - xóa đầu
   deletehead() {
     if (this.length === 0) {
       return undefined;
@@ -67,7 +67,7 @@ export default class SinglyLinkedList {
     return currentHead;
   }
 
-  //method - insert node to the beginning
+  // addhead - thêm vào đầu
   addhead(value, color) {
     const newNode = new Node(value, color);
     if (!this.head) {
@@ -90,7 +90,7 @@ export default class SinglyLinkedList {
   
 
 
-  // get index - retrieve a value at given index
+  // get index - lấy giá trị vị trí node cần thao tác
   get(index) {
     if (this.length === 0 || this.length - 1 < index) {
       return null;
@@ -103,7 +103,7 @@ export default class SinglyLinkedList {
     return node;
   }
 
-  // set method - given an index and value, update the value of that node
+  // set - sửa giá trị node
   set(value, color, index) {
     const positionNode = this.get(index);
     if (positionNode) {
@@ -114,7 +114,7 @@ export default class SinglyLinkedList {
     return false;
   }
 
-  // insert method - accepts an index and value and inserts a new node
+  // insert - chèn node vào vị trí index
   insert(value, color, index) {
     if (index < 0 || index > this.length) {
       return false;
@@ -141,7 +141,7 @@ export default class SinglyLinkedList {
     this.length += 1;
   }
 
-  // remove method - accepts an index removes the node at that index
+  // remove - xóa node ở vị trí index
   remove(index) {
     if (this.length === 0 || index < 0 || index > this.length - 1) {
       return null;
@@ -163,7 +163,7 @@ export default class SinglyLinkedList {
     return removed;
   }
 
-  // reverse method - reverses the order of the nodes
+  // print - duyệt và in ra các phần từ trong mảng
   print() {
     if (this.length === 0) {
       return true;

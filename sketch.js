@@ -60,7 +60,7 @@ function undo() {
     tree = event.data[0];
     lastMsg = event.data[1];
   };
-  undoButton.attribute('disabled', ''); // disable undo button after use.
+  undoButton.attribute('disabled', ''); 
 }
 
 function displayNode(curr) {
@@ -88,7 +88,7 @@ function printPreOrder() {
   lastMsg = '';
   printOutput = '';
   payload = ['Print Pre Order'];
-  BST.postMessage(payload); // send message 'Print Pre Order' to the BST to print all elements pre-orderly
+  BST.postMessage(payload); 
   BST.onmessage = function (event) {
     tree = event.data[0];
     lastMsg = event.data[1];
@@ -103,7 +103,7 @@ function printInOrder() {
   lastMsg = '';
   printOutput = '';
   payload = ['Print In Order'];
-  BST.postMessage(payload); // send message 'Print In Order' to the BST to print all elements in-orderly
+  BST.postMessage(payload); 
   BST.onmessage = function (event) {
     tree = event.data[0];
     lastMsg = event.data[1];
@@ -118,7 +118,7 @@ function printPostOrder() {
   lastMsg = '';
   printOutput = '';
   payload = ['Print Post Order'];
-  BST.postMessage(payload); // send message 'Print Post Order' to the BST to print all elements post-orderly
+  BST.postMessage(payload); 
   BST.onmessage = function (event) {
     tree = event.data[0];
     lastMsg = event.data[1];
@@ -136,10 +136,10 @@ function insert() {
   if (isNaN(value) === true) return undefined;
   disableUI();
   payload = ['Insert', value, width];
-  BST.postMessage(payload); // send message 'Insert', inputted value and canvas width to ask the Tree to insert new element
+  BST.postMessage(payload); 
   BST.onmessage = function (event) {
-    tree = event.data[0]; // receive our tree modifications from the BST so the browser's main thread can display changes at each step in the algo instead of the final change
-    lastMsg = event.data[1]; // also receive message from the BST after each step in the algorithm is done
+    tree = event.data[0]; 
+    lastMsg = event.data[1];
     if (event.data[2] === 'Finished') enableUI();
   };
   return 0;
@@ -153,10 +153,10 @@ function del() {
   if (isNaN(value) === true) return undefined;
   disableUI();
   payload = ['Delete', value];
-  BST.postMessage(payload); // send message 'Delete' and inputted value to ask the Tree to delete an element
+  BST.postMessage(payload);
   BST.onmessage = function (event) {
-    tree = event.data[0]; // receive our tree modifications from the BST so the browser's main thread can display changes at each step in the algo instead of the final change
-    lastMsg = event.data[1]; // also receive message from the BST after each step in the algorithm is done
+    tree = event.data[0]; 
+    lastMsg = event.data[1]; 
     if (event.data[2] === 'Finished') enableUI();
   };
   return 0;
@@ -170,10 +170,10 @@ function find() {
   if (isNaN(value) === true) return undefined;
   disableUI();
   payload = ['Find', value];
-  BST.postMessage(payload); // send message 'Find' and inputted value to ask the Tree to find an element
+  BST.postMessage(payload); 
   BST.onmessage = function (event) {
-    tree = event.data[0]; // receive our tree modifications from the BST so the browser's main thread can display changes at each step in the algo instead of the final change
-    lastMsg = event.data[1]; // also receive message from the BST after each step in the algorithm is done
+    tree = event.data[0]; 
+    lastMsg = event.data[1];
     if (event.data[2] === 'Finished') enableUI();
   };
   return 0;
@@ -208,10 +208,10 @@ function addControls(type, name, onClick) {
 }
 
 function setup() {
-  // INITIALIZE WEB WORKER THREAD FOR THE TREE ALGORITHM AND VISUALIZATION
+
   BST = new Worker('BST.js');
 
-  // BEGIN VISUALIZATION CONTROLS STUFF
+  
   controlDiv = createDiv();
   controlDiv.parent('mainContent');
   controlDiv.id('controlSection');
@@ -229,9 +229,6 @@ function setup() {
   undoButton = addControls('Button', 'Undo', undo);
   animationSpeedSliderLabel = addControls('Label', 'Animation Speed:', '');
   animationSpeedSlider = addControls('Slider', '', setAnimSpeed);
-  // END VISUALIZATION CONTROLS STUFF
-
-  // SET CANVAS AND TEXT SIZE
   const canvas = createCanvas(1024, 500);
   canvas.parent('mainContent');
   textSize(15);

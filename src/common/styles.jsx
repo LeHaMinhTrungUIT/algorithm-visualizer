@@ -15,9 +15,9 @@ export const ArrayItem = styled.div`
   border: 1px solid black;
   width: 50px;
   height: 50px;
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  border-radius: 30px;
   flex-shrink: 0;
+  margin-left: 2px
 `;
 
 export const swapAnimation = (distance, swapColor) => keyframes`
